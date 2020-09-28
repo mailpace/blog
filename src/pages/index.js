@@ -1,21 +1,64 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
+import Bio from "../components/bio"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import Button from "../components/button"
+import SearchPosts from "../components/searchPosts"
 
-class IndexPage extends React.Component {
+class Blog extends React.Component {
   render() {
-    const siteTitle = "OhMySMTP Blog"
+    const { data, navigate, location } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMdx.edges
+    const localSearchBlog = data.localSearchBlog
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
+        <SEO title="All posts" />
+        <Bio />
+        <SearchPosts
+          posts={posts}
+          localSearchBlog={localSearchBlog}
+          navigate={navigate}
+          location={location}
+        />
+        <Link to="https://app.ohmysmtp.com/users/sign_up">
+          <Button marginTop="85px">Get Started Sending</Button>
         </Link>
       </Layout>
     )
   }
 }
 
-export default IndexPage
+export default Blog
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    localSearchBlog {
+      index
+      store
+    }
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`

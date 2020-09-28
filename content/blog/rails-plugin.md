@@ -1,6 +1,6 @@
 ---
 title: Send emails with Rails over OhMySMTP
-date: "2020-09-26T22:12:03.284Z"
+date: "2020-09-28T22:12:03.284Z"
 description: Launching our Ruby-on-Rails plugin 🚀
 ---
 
