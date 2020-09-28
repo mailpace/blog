@@ -131,4 +131,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: `/blog`,
 }
