@@ -4,7 +4,7 @@ module.exports = {
     title: `The Official OhMySMTP Blog`,
     author: `Paul`,
     description: `The official blog of the transactional email service OhMySMTP.`,
-    siteUrl: `https://ohmysmtp.com/blog/`,
+    siteUrl: `https://blog.ohmysmtp.com/`,
     social: {
       twitter: `ohmysmtp`,
     },

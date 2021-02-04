@@ -6,4 +6,8 @@ https://blog.ohmysmtp.com/admin
 
 # To develop locally:
 
-gatsby build && gatsby serve
+Install gatsby: `npm install -g gatsby-cli`
+
+Install deps: `npm install`
+
+Run: `gatsby build && gatsby serve`
