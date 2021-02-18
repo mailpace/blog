@@ -24,10 +24,10 @@ const contents_in_base64 = file_buffer.toString('base64');
 
 // Craft the email
 const email = {
-  from: `test@${domain}`,
-  to: 'pauljohncleary@gmail.com',
-  subject: 'Hi',
-  htmlbody: '<p>Hi!</p>',
+  from: `test@yourdomain.com`,
+  to: 'person@address.com',
+  subject: 'Attachment Email',
+  htmlbody: '<p>There is an attachment attached!</p>',
   attachments: [{
     name: "image.png",
     content_type: "image/png",
