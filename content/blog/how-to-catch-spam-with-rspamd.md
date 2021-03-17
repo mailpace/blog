@@ -22,11 +22,9 @@ There are 20+ Modules with hundreds of Tests and Symbols. And you can even write
 
 ## Configuring Rspamd
 
-The default Rspamd configuration works well out of the box, and will block a lot of spam. It is over 2000 lines in total, so it's broken up into lots of small individual files/folders. Generally this is one config file per Module, and sits in the following structure:
+The default Rspamd configuration works well out of the box, and will block a lot of spam. It is over 2000 lines in total, so it's broken up into lots of small individual files/folders within the Rspamd configuration directory.
 
-LOCAL_CONFDIR/
-
-On an Ubuntu install the default `LOCAL_CONFDIR` is `/etc/rspamd`
+> Hint: On an Ubuntu install the default configuration directory is `/etc/rspamd`
 
 ### Checking your current configuration
 
