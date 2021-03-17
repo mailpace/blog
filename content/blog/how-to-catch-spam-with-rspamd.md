@@ -1,6 +1,6 @@
 ---
 title: How to catch spam with Rspamd
-date: "2021-03-16T17:00:03.284Z"
+date: "2021-03-17T17:00:03.284Z"
 description: A simple guide to configuring the basic settings for the spam filtering system Rspamd
 ---
 
