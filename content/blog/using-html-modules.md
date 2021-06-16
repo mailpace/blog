@@ -1,6 +1,6 @@
 ---
 title: Modularizing a static website with HTML Modules and PostHTML
-date: "2021-06-18T16:00:03.284Z"
+date: "2021-06-16T16:00:03.284Z"
 description: How to enhance a static set of HTML pages with HTML Modules and PostHTML
 ---
 
