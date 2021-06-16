@@ -30,7 +30,7 @@ To setup our site we change our pages into a simple HTML structure that combines
 
 ```html
 <module href="/components/layout.html">
-	<module href="/content/content.html"></module>
+    <module href="/content/content.html"></module>
 </module>
 ```
 
@@ -40,7 +40,7 @@ Where layout.html contains our basic layout and pulls in a Head section, Nav bar
 <!DOCTYPE html>
 <html lang="en">
 	<module href="/components/head.html"></module>
-     <body>
+    <body>
         <module href="/components/nav.html"></module>
         <content></content>
         <module href="/components/footer.html"></module>
@@ -68,13 +68,13 @@ The end result that our compilation step will spit out is a combination of all o
 
 ## Compiling the pages using NPM
 
-We already use NPM to include TailwindCSS and host a simple development server with live reloading, so we'll add compilation of the HTML modules to our build step using PostHTML
+We already use NPM to include TailwindCSS and host a simple development server with live reloading, so we'll add compilation of the HTML modules to our build step using PostHTML.
 
 Install PostHTML Modules and onchange (onchange is for watching and rebuilding the pages when developing):
 
  `npm i -D posthtml-modules onchange`
 
-Create posthtml.json in the root of our project:
+Then create `posthtml.json` in the root of our project:
 
 ```json
 {
@@ -89,7 +89,7 @@ Create posthtml.json in the root of our project:
 }
 ```
 
-Update our build/watch npm scripts to include posthtml:
+Update our build/watch npm scripts to include posthtml inside `package.json`:
 
 ```json
   "scripts": {
