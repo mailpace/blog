@@ -16,13 +16,13 @@ HTML Modules & Imports are similar specifications that allow splitting up web pa
 
 The W3C have a great explainer here: https://github.com/WICG/webcomponents/blob/gh-pages/proposals/html-modules-explainer.md - but essentially it's a standard that should work well in the same way ES6 modules work well in JavaScript. The alternative to HTML Modules/Imports is to use an HTML templating language - there's lots to choose from, but we felt they were more geared towards injecting data into HTML files, than really modularizing things.
 
-The problem is that HTML Modules / Imports isn't finalised agreed (and we probably don't need all that ES6 jazz anyway), so how do we add this modular approach to our website?
+The problem is that HTML Modules / Imports isn't finalised & agreed (and we probably don't need all that ES6 jazz anyway), so how do we add this modular approach to our website?
 
 ## How to (sort of) use HTML Modules today on the Server
 
-Although the spec isn't finalized and agreed there is an implementation of PostHTML (an HTML post-processor, similar to PostCSS) which covers modules, called [PostHTML-Modules](https://github.com/posthtml/posthtml-modules).
+Although the spec isn't complete there is an implementation of PostHTML (an HTML post-processor, similar to PostCSS) which covers modules, called [PostHTML-Modules](https://github.com/posthtml/posthtml-modules).
 
-This module allows you to Import and process HTML Modules with PostHTML by adding a processing build step to your application pipeline. It's not quite what the W3C has in mind, but looks great for our use case.
+This library allows you to Import and process HTML Modules with PostHTML by adding a processing build step to your application pipeline. It's not quite what the W3C has in mind, but looks great for our use case.
 
 ## Structuring our pages into HTML Modules
 
