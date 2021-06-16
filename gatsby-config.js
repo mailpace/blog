@@ -6,7 +6,7 @@ module.exports = {
     description: `The official blog of the transactional email service OhMySMTP.`,
     siteUrl: `https://blog.ohmysmtp.com/`,
     social: {
-      twitter: `ohmysmtp`,
+      twitter: `EHLO_250`,
     },
   },
   plugins: [
