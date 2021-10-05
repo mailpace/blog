@@ -1,5 +1,5 @@
 ---
-title: How to Verify Paddle.com Webhooks / Alerts in Rails
+title: How to Verify Paddle.com Webhooks / Alerts in Ruby on Rails
 date: "2021-10-05T08:00:03.284Z"
 description: A short guide to verifying payment provider Paddle.com webhooks and alerts in Ruby on Rails
 ---
