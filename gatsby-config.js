@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     // edit below
     title: `The Official OhMySMTP Blog`,
-    author: `Paul`,
+    author: `Paul, founder of OhMySMTP`,
     description: `The official blog of the transactional email service OhMySMTP.`,
     siteUrl: `https://blog.ohmysmtp.com/`,
     social: {
