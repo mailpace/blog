@@ -10,4 +10,7 @@ Install gatsby: `npm install -g gatsby-cli`
 
 Install deps: `npm install`
 
+Run `gatsby develop`
+# To serve:
+
 Run: `gatsby build && gatsby serve`
