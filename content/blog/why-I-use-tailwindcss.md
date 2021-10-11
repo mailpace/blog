@@ -73,7 +73,7 @@ We eventually came up with ways to "import" our CSS into our Javascript world of
 
 But for me, it wasn't quite right:
 
-1. I still had to name elements, even if I wasn't reusing them
+1. I still had to name elements that deviated from the defaults, even if I wasn't reusing them
 2. I was either building my pages up from scratch, or layering on-top of Bootstrap. My sites either looked like everyone else's, or looked terrible / took ages to get right
 
 ## Enter TailwindCSS (and other utility libraries)
