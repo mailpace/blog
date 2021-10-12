@@ -49,9 +49,9 @@ client
 	});</code></pre>
 ```
 
-Note that the inclusion of the `<pre>` tags means the layout is preserved, including tabs and whitespace, hence the awkward layout. Removing the `<pre>` tags will give you the code in an line format, useful for short snippets.
+Note that the inclusion of the `<pre>` tags means the layout is preserved, including tabs and whitespace, hence the awkward layout. Removing the `<pre>` tags will give you the code in an inline format, useful for short snippets.
 
-When this is rendered in the browser with Prism, you'll see it looking much prettier,something like this:
+When this is rendered in the browser with Prism, you'll see it looking much prettier, something like this:
 
 ```js
 const OhMySMTP = require('@ohmysmtp/ohmysmtp.js');
@@ -71,7 +71,7 @@ client
 
 ## How this works
 
-The HTML is standard `<code>` blocks, which are generally used for code examples. These are surrounded by `<pre>` tags which "preserve" the formatting. This means you have to be a bit careful with tabs and line breaks inside your source code that are typically ignored by HTML parsers.
+Our original HTML consists of standard `<code>` blocks, which are generally used for code examples. These are surrounded by `<pre>` tags which "preserve" the formatting. This means you have to be a bit careful with tabs and line breaks inside your source code that are typically ignored by HTML parsers.
 
 When we include the class `language-XXXX` in the code block (where `XXXX` is one of the many supported Prism languages), the Prism JavaScript will treat this block as code and apply syntax highlighting to it. 
 
