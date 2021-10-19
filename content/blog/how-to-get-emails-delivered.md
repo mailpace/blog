@@ -57,7 +57,7 @@ This is a common reason why emails can be delayed by a few minutes, which can be
 
 #### A 5xx error == don't send to me!
 
-You should not keep trying to send to these hard-bounced addresses. This can happy for a variety of reasons, but in theory it's a permanent error.
+You should not keep trying to send to these hard-bounced addresses. This can happen for a variety of reasons, but in theory it's a permanent error.
 
 > For any hard bounces we automatically add them to a block list and do not send any future emails to this address. Our users can remove emails from this list manually if they are confident the issue has been resolved.
 
