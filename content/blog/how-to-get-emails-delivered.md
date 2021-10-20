@@ -83,6 +83,10 @@ You need to enable [Sender Policy Framework (SPF)](https://blog.ohmysmtp.com/blo
 
 Support at least TLS 1.2+. TLS 1.1 and below are deprecated, if you want to work with all email servers ever, you can enable them - but at some point we all need to stop this.
 
+### Feedback Loops (FBLs)
+
+Feedback Loops are a mechanism to give email providers and large senders a notification [when a message is marked as spam](https://blog.ohmysmtp.com/blog/what-happens-when-you-send-an-email-to-spam/) by end users. You need to register for them, and then handle any reports or complaints that you receive through the FBL.
+
 ### No dedicated IPs
 
 Unless you're sending 250k+ emails/month, from one domain, in a consistent pattern, having a dedicated IP address will hurt your deliverability. This is because your volume will be too low to build a good reputation.
