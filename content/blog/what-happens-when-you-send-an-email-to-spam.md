@@ -18,7 +18,7 @@ There are individual FBL programs at the major providers (Google, Microsoft, Yah
 
 So when you hit “report spam”, the following happens:
 
-- Emails is moved to the spam folder
+- The email is moved to the spam folder
 - Spam detection systems are updated
 - If registered, an email complaint is sent through the FBL programme in ARF format
 - The original sender takes action to prevent further spam being sent (in theory)
