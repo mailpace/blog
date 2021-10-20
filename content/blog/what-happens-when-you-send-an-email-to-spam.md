@@ -1,7 +1,7 @@
 ---
 title: What happens when you send an email to spam?
 date: "2021-10-20T16:00:03.284Z"
-description: Do you know what happens when you report an email as spam?
+description: An overview of what happens when you report an email as spam, and what a Feedback Loop (FBL) is
 ---
 
 **No matter how good your spam filter is, some emails always get through. Most people will ignore or delete anything that they notice as spam, others will hit the “Report Spam” button. But what does this button do?**
