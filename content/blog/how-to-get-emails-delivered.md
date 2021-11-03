@@ -77,7 +77,7 @@ As mentioned above, enable this! All servers will check this.
 
 ### SPF & DMARC
 
-You need to enable [Sender Policy Framework (SPF)](https://blog.ohmysmtp.com/blog/whats-an-spf-record/), you can probably get away without [DMARC](https://en.wikipedia.org/wiki/DMARC), but it's worth enabling if you can.
+You need to enable [Sender Policy Framework (SPF)](https://blog.ohmysmtp.com/blog/whats-an-spf-record/), and it's also helpful to enable [DMARC](https://en.wikipedia.org/wiki/DMARC) if your provider supports it.
 
 ### TLS
 

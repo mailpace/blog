@@ -50,7 +50,7 @@ The good news is that you don't need to know any of this or do anything to use O
 
 We set a specific header in the email called `Return-Path` with all emails sent through our email service. If you take a peek at a raw email sent over OhMySMTP you'll find that the return path ends in `@mailer.ohmysmtp.com`, and if you look this up in the DNS system, you'll find an SPF record that points to our server IP address.
 
-Luckily email clients accept the return path header as the source of the email, so SPF checks pass on all our emails. without our users needing to do anything.
+Luckily email clients accept the return path header as the source of the email, so SPF checks pass on all our emails. without our users needing to do anything. If you do want to set your own SPF and DMARC policies with OhMySMTP, you can enable (Advanced Verification)[https://docs.ohmysmtp.com/guide/verification#advanced-verification]
 
 ## Other technologies and further reading
 
