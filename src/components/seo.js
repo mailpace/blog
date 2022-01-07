@@ -68,7 +68,7 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: metaDescription,
         },
         {
-          name: `twitter:image`,
+          name: `og:image`,
           content: `https://blog.ohmysmtp.com/logo.png`,
         },
       ]
