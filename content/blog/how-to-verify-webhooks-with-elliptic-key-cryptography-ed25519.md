@@ -6,9 +6,9 @@ description: How to use Elliptic Key Cryptography (Ed25519) to verify the conten
 
 # Background
 
-We launched support for [webhooks](https://docs.ohmysmtp.com/guide/webhooks/) back in November, a long awaited feature that allows users of our service to receive an HTTPS notification whenever an email is delivered, bounces, queued, marked as spam etc.
+We launched support for [webhooks](https://docs.ohmysmtp.com/guide/webhooks/) back in November, a long awaited feature that allows users of our service to receive an HTTPS notification whenever an email is delivered, bounces, queued, is marked as spam etc.
 
-One of our customers pointed out that we don't support any verification of our webhooks. That is, outside of the originating IP address and HTTPS certificate (our webhooks can only be sent over HTTPS), there is no definitive proof that a webhook originated from our servers and was not modified in any way.
+One of our customers pointed out that we don't support verification of our webhooks. That is, outside of the originating IP address and HTTPS certificate (our webhooks can only be sent over HTTPS), there is no definitive proof that a webhook originated from our servers and was not modified in any way.
 
 This could be a problem if someone was able to spoof a request or modify an inflight request with malicious data.
 
@@ -75,7 +75,7 @@ headers: {
 }
 ```
 
-That's pretty much all we do on our end.
+Aside from some glue code to pull this together, that's pretty much all we do on our end.
 
 ## How to verify our webhooks
 
