@@ -30,15 +30,15 @@ With DKIM we put the public key in our DNS record (proving that this public key 
 
 ## What does a DKIM record look like?
 
-Here's the DKIM record for [OhMySMTP.com](https://ohmysmtp.com):
+Here's the DKIM record for [MailPace.com](https://mailpace.com):
 
 ```
-ohmysmtp._domainkey
+mailpace._domainkey
 v=DKIM1; h=sha256; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC9iJpPrQh0HoQPYAMC+eytJp1Ey9uz932X/e+6kzMa9hGZQEYcj5/bOgjHN0Sgi+4ampvwlGY4jPC0aL1fMM9fpmXhCbijvGaWYatPGkngL+kXB0BqS512kQH4IiaGnPKOFErplW9192KjYXdHJFSLkKNKBlxn09CpAMUYvzTMzQIDAQAB;
 ```
 Let's break it down:
 
-- The first line `ohmysmtp._domainkey` is the name of the `TXT` record, and is used as a selector to identify the record among other DNS entries. The matching DKIM signature will have this selector included in the header, so the receiving email server knows where to look. You can have multiple DKIM entries, provided the selectors are different, which can be useful if you want to send using different private keys. If you need to support subdomains, they can be appended to the end e.g. `ohmysmtp._domainkey.sub.domain`
+- The first line `mailpace._domainkey` is the name of the `TXT` record, and is used as a selector to identify the record among other DNS entries. The matching DKIM signature will have this selector included in the header, so the receiving email server knows where to look. You can have multiple DKIM entries, provided the selectors are different, which can be useful if you want to send using different private keys. If you need to support subdomains, they can be appended to the end e.g. `mailpace._domainkey.sub.domain`
 
 The next line has three parts:
 - `v=DKIM1` tells us that this is an DKIM record, and it's a Version 1 record. There's only one version at present, so this will always be the same for the forseeable future
@@ -49,9 +49,9 @@ To add this to your DNS record, open up your domain registrar or DNS management 
 
 Simple, right?
 
-## How to use DKIM with OhMySMTP
+## How to use DKIM with MailPace
 
-The good news is that OhMySMTP signs all emails by DKIM automatically for you, we also generate and store the private keys, so all you need to do is add the public key we provide onto your DNS record, and DKIM will work like magic.
+The good news is that MailPace signs all emails by DKIM automatically for you, we also generate and store the private keys, so all you need to do is add the public key we provide onto your DNS record, and DKIM will work like magic.
 
 When you setup your first domain, we'll take you through an onboarding process to set things up, and you can re-do the verification process at any point on the Verification section of your domain.
 

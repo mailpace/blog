@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ohmysmtp/blog
+  repo: mailpace/blog
 
 media_folder: content/assets
 public_folder: ../assets

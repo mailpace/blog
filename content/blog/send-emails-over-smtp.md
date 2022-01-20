@@ -1,10 +1,10 @@
 ---
-title: Send emails over SMTP with OhMySMTP.com
+title: Send emails over SMTP with MailPace.com
 date: "2021-02-06T22:12:03.284Z"
 description: Our SMTP Server is now available 🚀🚀🚀
 ---
 
-We've launched a new way to send emails with OhMySMTP.com that opens up hundreds of integrations. Our Simple Mail Transfer Protocol (SMTP) server is now live at `smtp.ohmysmtp.com`
+We've launched a new way to send emails with MailPace.com that opens up hundreds of integrations. Our Simple Mail Transfer Protocol (SMTP) server is now live at `smtp.mailpace.com`
 
 ## Why use SMTP?
 
@@ -16,4 +16,4 @@ You may be able to send emails from an existing application by simply changing s
 
 To use our SMTP server, simply open up a connection to the server, and use your API Token as the username and password.
 
-More details & documentation here: https://docs.ohmysmtp.com/integrations/smtp
+More details & documentation here: https://docs.mailpace.com/integrations/smtp

@@ -15,7 +15,7 @@ Here's a quick preview:
 
 Check out the source code / setup instructions here:
 
-[https://github.com/ohmysmtp/templates/](https://github.com/ohmysmtp/templates/)
+[https://github.com/mailpace/templates/](https://github.com/mailpace/templates/)
 
 ## Technical Details
 

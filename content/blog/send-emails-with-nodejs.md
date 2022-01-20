@@ -1,18 +1,18 @@
 ---
-title: Send transactional emails with Node.js over OhMySMTP
+title: Send transactional emails with Node.js over MailPace
 date: "2021-02-04T22:12:03.284Z"
 description: Node.js package launch 🚀
 ---
 
-We're pleased to announce the availability of our open source Node.js package for sending emails over OhMySMTP.
+We're pleased to announce the availability of our open source Node.js package for sending emails over MailPace.
 
 This is probably the **easiest way to send transactional emails from Node.js!** 
 
-The npm package allows you to send emails in a couple of lines of code, it's a simple as creating a client with your API token, and calling `sendEmail` with your email contents (see here for a full list of email properties: https://docs.ohmysmtp.com/reference/send):
+The npm package allows you to send emails in a couple of lines of code, it's a simple as creating a client with your API token, and calling `sendEmail` with your email contents (see here for a full list of email properties: https://docs.mailpace.com/reference/send):
 
 ```javascript
-const OhMySMTP = require('@ohmysmtp/ohmysmtp.js');
-const client = new OhMySMTP.DomainClient('API_TOKEN_HERE');
+const MailPace = require('@mailpace/mailpace.js');
+const client = new MailPace.DomainClient('API_TOKEN_HERE');
 
 client.sendEmail({
     from: 'test@test.com',
@@ -22,13 +22,13 @@ client.sendEmail({
   });
 ```
 
-The package is available on npm here: https://www.npmjs.com/package/@ohmysmtp/ohmysmtp.js
+The package is available on npm here: https://www.npmjs.com/package/@mailpace/mailpace.js
 
-Source code here: https://github.com/ohmysmtp/ohmysmtp.js
+Source code here: https://github.com/mailpace/mailpace.js
 
-And finally the docs: https://docs.ohmysmtp.com/integrations/node
+And finally the docs: https://docs.mailpace.com/integrations/node
 
-If you don't have an OMS account, get one set up today: https://app.ohmysmtp.com/users/sign_up
+If you don't have an OMS account, get one set up today: https://app.mailpace.com/users/sign_up
 
 Happy sending!
 Paul.

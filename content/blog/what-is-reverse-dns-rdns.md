@@ -6,7 +6,7 @@ description: A guide to Reverse DNS (rDNS) and PTR records
 
 ## Background 
 
-[DNS (Domain Name System)](https://en.wikipedia.org/wiki/DNS) is a system that provides a key-value data store for domain information. Its primary use is to link a domain to an IP address, although it is often used for other records like [SPF](https://blog.ohmysmtp.com/blog/whats-an-spf-record/) and [DKIM](https://blog.ohmysmtp.com/blog/whats-a-DKIM-record/)
+[DNS (Domain Name System)](https://en.wikipedia.org/wiki/DNS) is a system that provides a key-value data store for domain information. Its primary use is to link a domain to an IP address, although it is often used for other records like [SPF](https://blog.mailpace.com/blog/whats-an-spf-record/) and [DKIM](https://blog.mailpace.com/blog/whats-a-DKIM-record/)
 
 When you access a website you usually have an easy to read domain, and to find the computer behind that domain your browser will query a DNS server for the IP address associated with it. These records are set by the domain owner, and if you have ever built a website or app you're probably familiar with setting this up.
 
@@ -52,14 +52,14 @@ $ dig -x 193.33.178.182 +noall +answer
 
 ; <<>> DiG 9.10.6 <<>> -x 193.33.178.182 +noall +answer
 ;; global options: +cmd
-182.178.33.193.in-addr.arpa. 300 IN	PTR	mailer.ohmysmtp.com.
+182.178.33.193.in-addr.arpa. 300 IN	PTR	mailer.mailpace.com.
 ```
 
 - `-x` tells dig to translate our lookup into an rDNS query
 - `+noall` hides all of the response
 - `+answer` shows the answer itself
 
-The keen-eyed among you will see that the IP address above is backwards, so what we actually have in our PTR record is  `182.178.33.193` (which really means `193.33.178.182`) points to `mailer.ohmysmtp.com`. This means that when an email comes from this IP address, the rDNS query made by most spam filters will resolve to `mailer.ohmysmtp.com`. We set the hostname of our `ReplyTo` header in all our outgoing emails to this domain, so that these email servers can match up the email hostname to our IP using this this mechanism.
+The keen-eyed among you will see that the IP address above is backwards, so what we actually have in our PTR record is  `182.178.33.193` (which really means `193.33.178.182`) points to `mailer.mailpace.com`. This means that when an email comes from this IP address, the rDNS query made by most spam filters will resolve to `mailer.mailpace.com`. We set the hostname of our `ReplyTo` header in all our outgoing emails to this domain, so that these email servers can match up the email hostname to our IP using this this mechanism.
 
 ## How to set an rDNS record
 
@@ -69,7 +69,7 @@ However if you’re lucky enough to have authority over your IPs you can set the
 
 Create and save a PTR record using the format above ( remember to reverse the IP!) and save it as a new record e.g.
 
-`182.178.33.193.in-addr.arpa. 300 IN	PTR	mailer.ohmysmtp.com.`
+`182.178.33.193.in-addr.arpa. 300 IN	PTR	mailer.mailpace.com.`
 
 And that's it!
 

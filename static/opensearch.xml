@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
-  <ShortName>OhMySMTP Blog</ShortName>
-  <Description>The official OhMySMTP Blog</Description>
-  <Url type="text/html" method="get" template="https://ohmysmtp.com/blog/?search={searchTerms}"/>
+  <ShortName>MailPace Blog</ShortName>
+  <Description>The official MailPace Blog</Description>
+  <Url type="text/html" method="get" template="https://mailpace.com/blog/?search={searchTerms}"/>
 </OpenSearchDescription>

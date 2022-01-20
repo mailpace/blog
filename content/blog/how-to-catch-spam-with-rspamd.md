@@ -8,7 +8,7 @@ description: A simple guide to configuring the basic settings for the spam filte
 
 [Rspamd](https://rspamd.com/) is a powerful email spam filtering system. It's fast, open source, and supports a huge number of features - and it's extremely good at identifying spam.
 
-You can use Rspamd to filter emails coming into your network / application, and either block them completely, or flag them as potential spam (e.g. to put them in user's spam folders). Checking outbound email is also supported (in fact, that's what we use it for at [OhMySMTP](https://ohmysmtp.com), and this helps ensure users aren't accidentally sending spam (e.g. via a hacked account).
+You can use Rspamd to filter emails coming into your network / application, and either block them completely, or flag them as potential spam (e.g. to put them in user's spam folders). Checking outbound email is also supported (in fact, that's what we use it for at [MailPace](https://mailpace.com), and this helps ensure users aren't accidentally sending spam (e.g. via a hacked account).
 
 Rspamd is very, very configurable, and due to it's vast surface area, plugins and scope it's not easy to understand how to configure it, which means most people end up with the default configuration. Fortunately once you know how, it's not difficult to configure and enhance to capture even more spam.
 
@@ -99,7 +99,7 @@ Now any email that matches these regular expressions (e.g. has "spam string" in 
 
 ## How we automate configuration updates
 
-At OhMySMTP we use [Capistrano](https://capistranorb.com/) for deployments, so when we update our mail servers we have a task that runs the following command after deployment to update rspamd rules:
+At MailPace we use [Capistrano](https://capistranorb.com/) for deployments, so when we update our mail servers we have a task that runs the following command after deployment to update rspamd rules:
 
 ```
 execute 'sudo cp -r /home/user/mailer/current/rspamd/local.d/* /etc/rspamd/local.d/ && sudo systemctl restart rspamd'
@@ -117,7 +117,7 @@ All you need to do is pass the message to the `/learnspam` endpoint of the Rspam
 
 ## Summary & Further Reading
 
-As you can see there's lots you can do with Rspamd - listed above is just a tiny subset of what's available. To learn more check out the following links, or reach out to us at support@ohmysmtp.com
+As you can see there's lots you can do with Rspamd - listed above is just a tiny subset of what's available. To learn more check out the following links, or reach out to us at support@mailpace.com
 
 - [Rspamd Official Documentation](https://rspamd.com/doc/index.html)
 - [An alternative introduction to rspamd configuration](https://www.0xf8.org/2018/05/an-alternative-introduction-to-rspamd-configuration-introduction/)

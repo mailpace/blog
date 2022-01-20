@@ -17,7 +17,7 @@ export default function HTML(props) {
           href="opensearch.xml"
         />
         {props.headComponents}
-        <script async defer data-domain="blog.ohmysmtp.com" src="https://stats.ohmysmtp.com/js/index.js"></script>
+        <script async defer data-domain="blog.mailpace.com" src="https://stats.mailpace.com/js/index.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

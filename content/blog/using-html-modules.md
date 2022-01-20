@@ -4,7 +4,7 @@ date: "2021-06-16T16:00:03.284Z"
 description: How to enhance a static set of HTML pages with HTML Modules and PostHTML
 ---
 
-Our landing page https://ohmysmtp.com is a static site that consists of a simple set of HTML pages, with a tiny sprinkling of JavaScript here and there. We started with a single HTML page and for links like our Privacy Policy and Terms of Service, we copied and pasted everything into a new file for each page.
+Our landing page https://mailpace.com is a static site that consists of a simple set of HTML pages, with a tiny sprinkling of JavaScript here and there. We started with a single HTML page and for links like our Privacy Policy and Terms of Service, we copied and pasted everything into a new file for each page.
 
 This was fine for a little while, but eventually it became annoying to keep updating each html file, so we wanted to add a way to modularize our pages. The idea is to keep the footer, header, nav bar and other components the same across the site, in a [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) way.
 

@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         },
         {
           name: `og:image`,
-          content: `https://blog.ohmysmtp.com/logo.png`,
+          content: `https://blog.mailpace.com/logo.png`,
         },
       ]
         .concat(

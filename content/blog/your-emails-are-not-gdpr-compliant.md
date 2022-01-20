@@ -40,7 +40,7 @@ When you browse a public website, you generally accept being tracked by the webs
 
 ## What can you do to help?
 
-Turn off open and click tracking in the emails you send, if your email provider allows you to. If they don't join us at [OhMySMTP](https://ohmysmtp.com) instead - we don't support spy pixels or click tracking, and won't ever support them.
+Turn off open and click tracking in the emails you send, if your email provider allows you to. If they don't join us at [MailPace](https://mailpace.com) instead - we don't support spy pixels or click tracking, and won't ever support them.
 
 If you're concerned about being tracked in your inbox:
 

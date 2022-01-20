@@ -67,7 +67,7 @@ class Layout extends React.Component {
           <main>{children}</main>
         </div>
         <Footer>
-          © {new Date().getFullYear()} <a href="https://ohmysmtp.com">OhMySMTP</a>
+          © {new Date().getFullYear()} <a href="https://mailpace.com">MailPace</a>
         </Footer>
       </Wrapper>
     )

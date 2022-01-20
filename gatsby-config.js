@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
     // edit below
-    title: `The Official OhMySMTP Blog`,
-    author: `Paul, founder of OhMySMTP`,
-    description: `The official blog of the transactional email service OhMySMTP.`,
-    siteUrl: `https://blog.ohmysmtp.com/`,
+    title: `The Official MailPace Blog`,
+    author: `Paul, founder of MailPace`,
+    description: `The official blog of the transactional email service MailPace.`,
+    siteUrl: `https://blog.mailpace.com/`,
     social: {
       twitter: `EHLO_250`,
     },
@@ -106,7 +106,7 @@ module.exports = {
                 }
               `,
               output: "/rss.xml",
-              title: "The Official OhMySMTP Blog",
+              title: "The Official MailPace Blog",
               // optional configuration to insert feed reference in pages:
               // if `string` is used, it will be used to create RegExp and then test if pathname of
               // current page satisfied this regular expression;

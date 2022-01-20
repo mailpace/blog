@@ -4,7 +4,7 @@ date: "2021-10-12T22:15:03.284Z"
 description: A guide to adding beautiful code blocks with syntax highlighting to a website, application or blog
 ---
 
-When demonstrating code, it really helps to be able to show the examples with syntax highlighting, and this is exactly what we do for our landing page over at https://ohmysmtp.com, which looks like this:
+When demonstrating code, it really helps to be able to show the examples with syntax highlighting, and this is exactly what we do for our landing page over at https://mailpace.com, which looks like this:
 
 ![An example of code syntax highlighting](../assets/code-syntax-highlighting-example.png)
 
@@ -34,8 +34,8 @@ Once you have your `prism.js` and `prism.css` code included or bundled into the 
 Here's a simple example from our landing page as it would appear in your HTML editor, note the `"language-javascript"` class:
 
 ```html
-<pre><code class="language-javascript">const OhMySMTP = require('@ohmysmtp/ohmysmtp.js');
-const client = new OhMySMTP.DomainClient('API_TOKEN_HERE');
+<pre><code class="language-javascript">const MailPace = require('@mailpace/mailpace.js');
+const client = new MailPace.DomainClient('API_TOKEN_HERE');
 
 client
 	.sendEmail({
@@ -54,8 +54,8 @@ Note that the inclusion of the `<pre>` tags means the layout is preserved, inclu
 When this is rendered in the browser with Prism, you'll see it looking much prettier, something like this:
 
 ```js
-const OhMySMTP = require('@ohmysmtp/ohmysmtp.js');
-const client = new OhMySMTP.DomainClient('API_TOKEN_HERE');
+const MailPace = require('@mailpace/mailpace.js');
+const client = new MailPace.DomainClient('API_TOKEN_HERE');
 
 client
 	.sendEmail({

@@ -10,24 +10,24 @@ If you’re self hosting your own email, or looking to set up an email provider,
 
 ## 1. Don’t send spam
 
-It seems obvious, but anyone can sign up to an account at OhMySMTP, and even legitimate senders can be victims of spammers. We’ve seen spam coming through contact forms, private message notifications and more. Anything that originates from your IP will be accredited to you, so **if there's anywhere your users can input text, spammers will try to exploit it**. And if your reputation starts to drop, so will your delivery rates.
+It seems obvious, but anyone can sign up to an account at MailPace, and even legitimate senders can be victims of spammers. We’ve seen spam coming through contact forms, private message notifications and more. Anything that originates from your IP will be accredited to you, so **if there's anywhere your users can input text, spammers will try to exploit it**. And if your reputation starts to drop, so will your delivery rates.
 
 Here’s what we do to help stop this:
 
 ### Spam filter on all outgoing emails
 
-We use [Rspamd](https://rspamd.com/) to filter every email sent through OhMySMTP. Our filters are aggressive and we use the built in Neural network module to learn from spam we see in the wild. 
+We use [Rspamd](https://rspamd.com/) to filter every email sent through MailPace. Our filters are aggressive and we use the built in Neural network module to learn from spam we see in the wild. 
 
-Rspamd can be confusing to configure, if you're struggling, we've previously written about [how to set up Rspamd](https://blog.ohmysmtp.com/blog/how-to-catch-spam-with-rspamd/
+Rspamd can be confusing to configure, if you're struggling, we've previously written about [how to set up Rspamd](https://blog.mailpace.com/blog/how-to-catch-spam-with-rspamd/
 ).
 
 ### Whitelisted file extension attachments
 
-We support attachments, but we only support a subset of file extensions ([details in our docs](https://docs.ohmysmtp.com/reference/send/#attachments)), and virus scan them before sending. While not perfect this significantly reduces the risk of dangerous files being sent through our service.
+We support attachments, but we only support a subset of file extensions ([details in our docs](https://docs.mailpace.com/reference/send/#attachments)), and virus scan them before sending. While not perfect this significantly reduces the risk of dangerous files being sent through our service.
 
 ### Proof of domain ownership 
 
-Every domain must be verified using [DKIM](https://blog.ohmysmtp.com/blog/whats-a-DKIM-record/). This is both to prove ownership of a domain, but also because most email servers will check DKIM signatures before delivery regardless.
+Every domain must be verified using [DKIM](https://blog.mailpace.com/blog/whats-a-DKIM-record/). This is both to prove ownership of a domain, but also because most email servers will check DKIM signatures before delivery regardless.
 
 ### No free plan
 
@@ -77,7 +77,7 @@ As mentioned above, enable this! All servers will check this.
 
 ### SPF & DMARC
 
-You need to enable [Sender Policy Framework (SPF)](https://blog.ohmysmtp.com/blog/whats-an-spf-record/), and it's also helpful to enable [DMARC](https://en.wikipedia.org/wiki/DMARC) if your provider supports it.
+You need to enable [Sender Policy Framework (SPF)](https://blog.mailpace.com/blog/whats-an-spf-record/), and it's also helpful to enable [DMARC](https://en.wikipedia.org/wiki/DMARC) if your provider supports it.
 
 ### TLS
 
@@ -85,7 +85,7 @@ Support at least TLS 1.2+. TLS 1.1 and below are deprecated, if you want to work
 
 ### Feedback Loops (FBLs)
 
-Feedback Loops are a mechanism to give email providers and large senders a notification [when a message is marked as spam](https://blog.ohmysmtp.com/blog/what-happens-when-you-send-an-email-to-spam/) by end users. You need to register for them, and then handle any reports or complaints that you receive through the FBL.
+Feedback Loops are a mechanism to give email providers and large senders a notification [when a message is marked as spam](https://blog.mailpace.com/blog/what-happens-when-you-send-an-email-to-spam/) by end users. You need to register for them, and then handle any reports or complaints that you receive through the FBL.
 
 ### No dedicated IPs
 
@@ -105,7 +105,7 @@ We run monitoring and anomaly detection on our systems, automatically searching 
 - High spam detection rates or increasing Rspamd scores
 - High 4xx and 5xx SMTP responses
 - Blocklist SMTP responses
-- Long "time to inbox" times for 3x main providers (published on our [landing page](https://ohmysmtp.com/))
+- Long "time to inbox" times for 3x main providers (published on our [landing page](https://mailpace.com/))
 
 Additionally we manually review accounts regularly and monitor external blocklists and deliverability ratings for our IPs and domains. There are even some whitelists out there to get your IP on, which can help.
 
@@ -113,4 +113,4 @@ Additionally we manually review accounts regularly and monitor external blocklis
 
 As you can see there's quite a lot here, and this is by no means an exhaustive list of all the techniques required to get emails delivered.
 
-If you'd like to take advantage of all the above for your Transactionl Email, without having to do anything yourself, sign up for an account with us: [ohmysmtp.com](https://ohmysmtp.com/)
+If you'd like to take advantage of all the above for your Transactionl Email, without having to do anything yourself, sign up for an account with us: [mailpace.com](https://mailpace.com/)

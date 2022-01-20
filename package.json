@@ -1,11 +1,11 @@
 {
   "name": "blog",
   "private": true,
-  "description": "The official OhMySMTP.com blog",
+  "description": "The official MailPace.com blog",
   "version": "2.0.0",
-  "author": "Paul <paul@ohmysmtp.com>",
+  "author": "Paul <paul@mailpace.com>",
   "bugs": {
-    "url": "https://github.com/ohmysmtp/blog"
+    "url": "https://github.com/mailpace/blog"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
@@ -51,7 +51,7 @@
     "gatsby-plugin-root-import": "^2.0.7",
     "prettier": "^1.17.0"
   },
-  "homepage": "https://ohmysmtp.com",
+  "homepage": "https://mailpace.com",
   "keywords": [
     "gatsby"
   ],
@@ -59,7 +59,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ohmysmtp/blog"
+    "url": "git+https://github.com/mailpace/blog"
   },
   "scripts": {
     "build": "gatsby build",

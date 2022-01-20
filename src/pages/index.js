@@ -24,7 +24,7 @@ class Blog extends React.Component {
           navigate={navigate}
           location={location}
         />
-        <Link to="https://app.ohmysmtp.com/users/sign_up">
+        <Link to="https://app.mailpace.com/users/sign_up">
           <Button marginTop="85px">Get Started Sending</Button>
         </Link>
       </Layout>
