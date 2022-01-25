@@ -17,7 +17,7 @@ export default function HTML(props) {
           href="opensearch.xml"
         />
         {props.headComponents}
-        <script async defer data-domain="blog.mailpace.com" src="https://stats.mailpace.com/js/index.js"></script>
+        <script async defer data-domain="blog.mailpace.com" src="https://plausible.io/js/plausible.js"></script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
