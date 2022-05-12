@@ -14,13 +14,13 @@ When an email is received by a mailbox provider, they use the Domain Name System
 
 By specifying an optional `default._bimi` DNS TXT record on the sending domain, with a link to a logo in the content, the mailbox provider will look up that logo (provided DMARC passes with a strict/quarantine policy), and show it to users.
 
-# VMC Certificates, what are those?
+# VMC Certificates, what are they?
 
 To ensure that logos are actually truly representative of the brand involved, and more cynically, to make money and penalize small senders, an optional Verified Mark Certificate can be added to the DNS records, which some mailboxes will validate before showing the logo.
 
 At the time of writing this, this **certificate is provided by only two specific registrars** (see https://bimigroup.org/vmc-issuers/ for a list), who will verify that the logo provided is a registered trademarked logo before issuing the certificate.
 
-> If you want your BIMI logo to show up in the world' largest mailbox provider, Gmail, you must have a VMC.
+> Hint: If you want your BIMI logo to show up in the world's largest mailbox provider, Gmail, you must have a valid VMC certificate
 
 Unfortunately **VMC certificates cost upwards of $1000 USD** to purchase. Which puts them out of reach for casual or small senders (of which we are big supporters here at MailPace), and undermines the BIMI effort overall.
 
