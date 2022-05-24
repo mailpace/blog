@@ -1,10 +1,10 @@
 ---
 title: WebAuthn, and only WebAuthn
 date: "2022-05-24T20:15:03.284Z"
-description: Why we implemented WebAuthn for Second Factor Authentication
+description: Why we implemented WebAuthn for Two Factor Authentication
 ---
 
-Recently we added 2FA support to MailPace. It was long overdue, with many of our customers requesting it regularly. This post is about the options available in 2022 and why we went with WebAuthn, **and only WebAuthn**.
+Recently we added Two Factor Authentication (2FA) support to MailPace. It was long overdue, with many of our customers requesting it regularly. This post is about the options available in 2022 and why we went with WebAuthn, **and only WebAuthn**.
 
 We started with an assumption that plain old [Time-based One Time Password (TOTP)](https://en.wikipedia.org/wiki/Time-based_one-time_password) would be the right choice here, after all it’s the most common 2FA approach, reasonably secure, almost every service with 2FA supports it, and there are numerous iOS and Android apps for storing the shared secret, as well as browser extensions. To be honest, if enabling TOTP 2FA was as simple as flipping a switch, we would have enabled it and been done with it. But when researching how to get setup with Devise and Rails, it wasn’t immediately obvious which library/approach to take, so we did some more reading on the other 2FA options available.
 
