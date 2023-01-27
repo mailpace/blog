@@ -14,7 +14,7 @@ Often, you'll want to send multiple different types of emails from the same app,
 
 **By separating our your email streams by subdomain, you're helping to protect the reputation of your most important transactional emails**, that customers need to get immediately.
 
-You’re also less likely to accidentally modify a dedicated subdomain’s DNS records, which can wreak havoc on DKIM signing, DMARC, and SPF polciies. This happens more often than you'd think, especially for larger setups.
+You’re also less likely to accidentally modify a dedicated subdomain’s DNS records, which can wreak havoc on DKIM signing, DMARC, and SPF policies. This happens more often than you'd think, especially for larger setups.
 
 # But how?
 
