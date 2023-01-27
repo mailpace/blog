@@ -1,6 +1,6 @@
 ---
 title: Should you use a subdomain for sending emails?
-date: "2023-01-27T22:15:03.284Z"
+date: "2023-01-27T21:15:03.284Z"
 description: When sending emails from an App, Website or other software, should you use a subdomain? The answer is yes, here's why.
 ---
 
