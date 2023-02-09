@@ -16,7 +16,7 @@ We measure the full end to end delivery (by sending emails to the three big prov
 
 On Tuesday 8th Feb, at around 8pm GMT we noticed a sudden spike in the average time to inbox, and transaction averages of our email sending service. The spike jumped up, then back down to after 5 minutes, then every 10-15 minutes it came back up again. We hadn’t made any changes to production or our infra, so after a quick check that everything looked good on all our services, we assumed this was a temporary problem with another service and decided to monitor the problem overnight.
 
-Of course, in the morning, the alerts had still not subsided, and we were seeing elevated rates for about 12 hours. Approximately 7% of emails were affected, and of those around 30% were seeing 1 minute long deliveries. The other 90% were sailing through just fine, and every ad-hoc test we ran arrived immediately.
+Of course, in the morning, the alerts had still not subsided, and we were seeing elevated rates for about 12 hours. Approximately 7% of emails were affected, and of those around 30% were seeing 1 minute long deliveries. The other 93% were sailing through just fine, and every ad-hoc test we ran arrived immediately.
 
 # Attempts to solve
 
@@ -83,7 +83,7 @@ DNS changes are risky and almost impossible to test. Even an innocuous change ca
 
 Distributed systems are hard to manage.
 
-We trust our own judgement too much, and have little faith in past decisions. We "knew" our IP was misconfigured, and we "knew" the DNS changes couldn't affect sending. But we were wrong on both counts, causing the initial issue and slowing down our bugfix.
+We trust our own judgement too much, and have little faith in past decisions. We "knew" our IP was misconfigured, and we "knew" the DNS changes couldn't affect sending. But we were wrong on both counts, causing the initial issue and slowing down our fix.
 
 # How we're avoiding this in the future
 
