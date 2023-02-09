@@ -8,7 +8,7 @@ description: We saw some slow sending of a small subset of emails for about 16 h
 
 # What fast means
 
-At MailPace we’re all about fast delivery of transactional emails. Typically this means under 4 seconds for all emails, and we start sending internal alerts when the average is over 2 seconds, as it usually means something is up, either with us or another provider.
+At MailPace we’re all about fast delivery of transactional emails. Typically this means under 10 seconds for all emails, and we start sending internal alerts when the average is over 5 seconds, as it usually means something is up, either with us or another provider.
 
 We measure the full end to end delivery (by sending emails to the three big providers and literally checking the inbox over IMAP), and we publish the results live on our [landing page](https://mailpace.com). So it’s really important to us to keep an eye on this and ensure it’s running well.
 
