@@ -23,7 +23,7 @@ function Bio() {
               Follow my journey on 
               <a href={`https://social.mailpace.com/@paul`}>
                 Mastodon
-              </a>
+              </a> and 
               <a href={`https://twitter.com/${social.twitter}`}>
                 Twitter
               </a>
