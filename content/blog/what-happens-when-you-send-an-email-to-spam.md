@@ -23,4 +23,4 @@ So when you hit “report spam”, the following happens:
 - If registered, an email complaint is sent through the FBL programme in ARF format
 - The original sender takes action to prevent further spam being sent (in theory)
 
-These final two steps can take a relatively long time to get through (hours or days), and many senders are not registered with the FBL programmes. So to prevent future spam arriving your best bet is to look out for a [List-Unsubscribe](https://www.litmus.com/blog/the-ultimate-guide-to-list-unsubscribe/) link or Unsubscribe link in the email footer, or use [temporary email addresses](https://www.idbloc.co/) and turn them off when done.
+These final two steps can take a relatively long time to get through (hours or days), and many senders are not registered with the FBL programmes. So to prevent future spam arriving your best bet is to look out for a [List-Unsubscribe](https://www.litmus.com/blog/the-ultimate-guide-to-list-unsubscribe/) link or Unsubscribe link in the email footer, or use a temporary email addresses and turn them off when done.
