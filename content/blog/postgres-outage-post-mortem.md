@@ -1,6 +1,6 @@
 ---
 title: Database Outage - Post Mortem
-date: "2023-30-08T16:00:03.284Z"
+date: "2023-08-30T16:00:03.284Z"
 description: A post mortem on a recent two hour outage for our API and Application
 ---
 
