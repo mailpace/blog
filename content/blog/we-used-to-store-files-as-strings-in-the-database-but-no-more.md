@@ -71,7 +71,7 @@ class SaveAttachmentsToCellarJob < ApplicationJob
       file.write(decoded_content)
       file.rewind
       attachment.file.attach(io: file, filename: attachment.name,
-                             content_type: attachment.content_type, identify: false)
+                             content_type: attachment.content_type, identify: false) # This is what stores the file in the object store, we set identify to false as the users provide teh Content-Type themselves
 
       attachment.update(content: nil) # Remove the base64 string from the database
     end
@@ -117,12 +117,12 @@ end
 
 This will remove the file when the model is deleted.
 
-Finally, we rite some unit tests, add the right credentials for the bucket, add we're good to go!
+Finally, we write some unit tests, add the right credentials for the bucket, add we're good to go!
 
 ## What happened
 
-Immediately after deployment we started seeing attachments shifting over to our bucket.
+Immediately after deployment we started seeing attachments shifting over to our bucket. Within an hour we had saved 500mb of database storage, and our database stopped growing in size almost immediately. 
 
-Within an hour we had saved 500mb of database storage, and our database stopped growing in size almost immediately. All this with no impact on our sending speed, and minimal changes to our current infrastructure.
+All this with no impact on our sending speed, and minimal changes to our current infrastructure.
 
 Nice!
