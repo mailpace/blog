@@ -20,10 +20,10 @@ function Bio() {
             <p>
               Written by <strong>{author}</strong>
               <br />
-              Follow my journey on 
+              Follow my journey on&nbsp;
               <a href={`https://social.mailpace.com/@paul`}>
                 Mastodon
-              </a> and 
+              </a> and&nbsp;
               <a href={`https://twitter.com/${social.twitter}`}>
                 Twitter
               </a>

@@ -111,7 +111,7 @@ This copies the configuration files from our git repository and restarts the Rsp
 
 Sometimes our filter doesn't quite catch everything and we receive a spam report from another server or a user. In those cases we automatically update Rspamd using the the `/learnspam` API endpoint.
 
-This endpoint updates the [Baynes classifier](https://en.wikipedia.org/wiki/Bayes_classifier) inside Rspamd, and helps improve the spam detection for similar emails.
+This endpoint updates the [Bayes classifier](https://en.wikipedia.org/wiki/Bayes_classifier) inside Rspamd, and helps improve the spam detection for similar emails.
 
 All you need to do is pass the message to the `/learnspam` endpoint of the Rspamd Worker over an HTTP request (usually running on port 11333).
 
