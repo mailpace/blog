@@ -1,5 +1,5 @@
 ---
-title: How does CC and BCC work?
+title: How does BCC work?
 date: "2023-09-16T13:00:03.284Z"
 description: A technical explanation of how CC, BCC, and SMTP Envelopes work in email
 ---
