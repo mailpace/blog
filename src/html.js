@@ -16,6 +16,7 @@ export default function HTML(props) {
           rel="search"
           href="opensearch.xml"
         />
+        <link rel="alternate" type="application/rss+xml" title="The Official MailPace Blog" href="https://blog.mailpace.com/rss.xml" />
         {props.headComponents}
         <script async defer data-domain="blog.mailpace.com" src="https://plausible.io/js/plausible.js"></script>
       </head>
