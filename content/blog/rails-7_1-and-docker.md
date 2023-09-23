@@ -1,6 +1,6 @@
 ---
 title: "Deploying Rails with Docker"
-date: "2023-09-23T21:00:03.284Z"
+date: "2023-09-23T22:12:03.284Z"
 description: "What the new Dockerfile available in Rails 7.1 will mean for Rails deployments"
 ---
 
@@ -16,7 +16,7 @@ This is a philosophical debate, do you want an opinionated stack that’s fast t
 
 > Although in my opinion anything that reduces your cognitive load so you can focus on your problem domain is worth it, so Rails wins for 99% of CRUD apps
 
-Given this, the default Rails deployments have typically involved deploying a bunch of components (e.g. Ruby, Redis, Sidekiq, ImageMagik etc) on a Linux VM or server, manually or automated with something like Ansible. Or perhaps using a PaaS like Heroku with everything pre-configured for you.
+Given this, **the default Rails deployments have typically involved deploying a bunch of components (e.g. Ruby, Redis, Sidekiq, ImageMagik etc) on a Linux VM or server, manually or automated with something like Ansible**. Or perhaps using a PaaS like Heroku with everything pre-configured for you.
 
 But we live in a world of containers now, where servers are cattle not pets, and everything is stateless and ephemeral, so what does that mean for Rails?
 
@@ -71,7 +71,6 @@ ENV RAILS_ENV="production" \
     BUNDLE_PATH="/usr/local/bundle" \
     BUNDLE_WITHOUT="development"
 
-
 # Throw-away build stage to reduce size of final image
 FROM base as build
 
@@ -79,15 +78,11 @@ FROM base as build
 RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libvips pkg-config
 
-
-
 # Install application gems
 COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
     bundle exec bootsnap precompile --gemfile
-
-
 
 # Copy application code
 COPY . .
@@ -97,7 +92,6 @@ RUN bundle exec bootsnap precompile app/ lib/
 
 # Precompiling assets for production without requiring secret RAILS_MASTER_KEY
 RUN SECRET_KEY_BASE_DUMMY=1 ./bin/rails assets:precompile
-
 
 # Final stage for app image
 FROM base
@@ -137,12 +131,14 @@ This way you can run the code in a separate container, but still have access to 
 
 But this is just the start - to run in production there's much more to consider (SSL termination, Load Balancing, Horizontal Scaling, etc.)
 
-## Simplifying actual deployments
+## Actual Production Deployments
 
-If you're a Rails developer you likely are productive, so you probably don't want to spend your time learning about Docker, Kubernetes, and all the other things you need to know to deploy a Rails app in production.
+If you're a Rails developer you're probably focused on building a great product, so you don't want to spend your time learning DevOps and setting up your infrastructure - which your users don't care about, ever.
 
-The good news is that the creators of Basecamp have released https://github.com/basecamp/kamal (formerly called MRSK), which  simplifies running Rails apps on your own hardware, or IaaS providers like Hetzner and Digital Ocean, uses containers and includes things like blue/green deployments etc. It's realistically dependent on a Load Balancer + SSL Termination in front. So you'll want to set that up separately or use a Cloud Provider with it built in already.
+The good news is that Basecamp have released [Kamal](https://github.com/basecamp/kamal) (formerly called MRSK), which  simplifies running Rails apps on your own hardware, or on IaaS providers like Hetzner and Digital Ocean. It uses containers and includes things like zero downtime deploys via blue/green deployments. You'll still want a Load Balancer + SSL Termination in front, so you'll need to set that up separately or use a Cloud Provider with it built in already.
 
-A more complete PaaS like https://fly.io can get you up and running with Rails very quickly too, and there are options like https://www.hatchbox.io/ that can also use any cloud provider to get a Rails app up and running quickly.
+A more turnkey PaaS like [Fly.io](https://fly.io) can get you up and running with Rails very quickly too, and is kind of a spiritual successor to Heroku. 
 
-Still, it does feel like there's a gap in examples and tutorials for how to deploy Rails apps with containers, so hopefully this will improve with Rails 7.1 including a Dockerfile by default.
+There are also cool options like [HatchBox](https://www.hatchbox.io/) that can use any Ubuntu machine to get a Rails app up running quickly, with everything you typically need baked in.
+
+So it looks like the Pet-VM approach for deploying Rails Apps is finally going to die out. But it does feel like there's a gap in examples, tutorials and services for deploying Rails apps with containers. Fingers crossed that Rails 7.1's Dockerfile will change this.
