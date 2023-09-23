@@ -1,6 +1,6 @@
 ---
 title: How to create a new Rails app with a specific version of Rails
-date: "2023-23-17T20:00:03.284Z"
+date: "2023-09-23T20:00:03.284Z"
 description: A short explanation of how to create a new Ruby on Rails app with a specific version of Ruby on Rails
 ---
 
