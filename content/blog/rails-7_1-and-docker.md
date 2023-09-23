@@ -1,5 +1,5 @@
 ---
-title: "Deploying Rails with Docker"
+title: "Deploying Rails with Docker - killing our Pets"
 date: "2023-09-23T22:12:03.284Z"
 description: "What the new Dockerfile available in Rails 7.1 will mean for Rails deployments"
 ---
@@ -141,4 +141,4 @@ A more turnkey PaaS like [Fly.io](https://fly.io) can get you up and running wit
 
 There are also cool options like [HatchBox](https://www.hatchbox.io/) that can use any Ubuntu machine to get a Rails app up running quickly, with everything you typically need baked in.
 
-So it looks like the Pet-VM approach for deploying Rails Apps is finally going to die out. But it does feel like there's a gap in examples, tutorials and services for deploying Rails apps with containers. Fingers crossed that Rails 7.1's Dockerfile will change this.
+So it looks like the Pet Server approach for deploying Rails Apps is finally going to die out. But it does feel like there's a gap in examples, tutorials and services for deploying Rails apps with containers. Fingers crossed that Rails 7.1's Dockerfile will change this.
