@@ -8,7 +8,7 @@ When demonstrating an API or similar service, your landing page should show how 
 
 It needs to be simple and clear, and not necessarily syntactically correct, but it should look like a terminal, complete with a blinking cursor and simulated text entry. Something like this:
 
-![A simulation of a terminal in the browser](../assets/terminal-simulation-in-browser.png)
+![A simulation of a terminal in the browser](../assets/terminal-simulation-in-browser.webp)
 
 With the the help of [TypedJS](https://github.com/mattboldt/typed.js/) and [TailwindCSS](https://tailwindcss.com/) this is actually really easy.
 
