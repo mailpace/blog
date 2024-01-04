@@ -103,4 +103,4 @@ And that's it!
 
 # Wrap up
 
-Of course, if you want to take advantage of this without writing a single line of code, send your emails through our [SMTP server](https://docs.mailpace.com/integrations/smtp).
+Of course, if you want to take advantage of this without writing a single line of code, just send your emails through [MailPace](https://mailpace.com)!
