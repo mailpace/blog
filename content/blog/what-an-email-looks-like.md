@@ -50,7 +50,7 @@ Content-Transfer-Encoding: 7bit
 
 **Mime-Version**
 
-The [MIME protocol version](https://en.wikipedia.org/wiki/MIME). This will always be `1.0``. Forever. There is **never** going to be a way to define a 1.1 or 2.0 version of MIME. Even the original author of the standard, Nathaniel Borenstein, admitted this. 
+The [MIME protocol version](https://en.wikipedia.org/wiki/MIME). This will always be `1.0`. Forever. There is **never** going to be a way to define a 1.1 or 2.0 version of MIME.
 
 > There are around 400 billion emails sent every day, if UTF-8 encoded this string takes up 16 bytes. That's 6 Terabytes of data, every day, flying around the world for no reason. Think about that every time your phone pings.
 
