@@ -126,7 +126,7 @@ const SearchPosts = ({ posts, localSearchBlog, location, navigate }) => {
         <input
           id="search"
           type="search"
-          placeholder="Search all posts"
+          placeholder="Search posts"
           value={query}
           onChange={e => {
             navigate(

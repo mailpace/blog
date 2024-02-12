@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import Newsletter from "../components/newsletter"
 import SEO from "../components/seo"
 import Button from "../components/button"
 import SearchPosts from "../components/searchPosts"
@@ -24,6 +25,7 @@ class Blog extends React.Component {
           navigate={navigate}
           location={location}
         />
+        <Newsletter />
         <Link to="https://app.mailpace.com/users/sign_up">
           <Button marginTop="85px">Get Started Sending</Button>
         </Link>

@@ -18,15 +18,13 @@ function Bio() {
         return (
           <Container>
             <p>
-              Written by <strong>{author}</strong>
-              <br />
-              Follow my journey on&nbsp;
-              <a href={`https://social.mailpace.com/@paul`}>
+              By <strong>{author}</strong>. Follow our journey on&nbsp;
+              <a target="_blank" href={`https://social.mailpace.com/@paul`}>
                 Mastodon
               </a> and&nbsp;
-              <a href={`https://twitter.com/${social.twitter}`}>
+              <a target="_blank" href={`https://twitter.com/${social.twitter}`}>
                 Twitter
-              </a>
+              </a>, and sign up to our <a target="_blank" href="https://buttondown.email/mailpace/">Product Newsletter</a>.
             </p>
           </Container>
         )
