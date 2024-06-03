@@ -19,7 +19,7 @@ We now use Turbo Frames to load the email details, and sprinkling of Stimulus Ja
 > This means no more Jquery in our app, anywhere!
 
 The email HTML goes inside two places:
-- A `<div>` to show the raw HTML, which we [syntax highlight with Prism](./adding-code-syntax-highlighting/)
+- A `<div>` to show the raw HTML, which we [syntax highlight with Prism](../adding-code-syntax-highlighting/)
 - An `<iframe>` which renders the HTML
 
 Finally, we added three buttons (Desktop, Tablet, Mobile) that let users change with width of the iframe to render the email at different widths.
