@@ -14,7 +14,7 @@ It's probably most fun to explain with a short story:
 
 You're staying in a high performant hotel, a hotel where everything is properly engineered for scale. The designers and engineers believe they have thought of everything, they think they know exactly what their guests want and they always deliver it fast. Their systems can scale to  thousands of guests per second, even though they only get 1 or 2 guests checking in every hour. Things sometimes go wrong, but it's almost always user error.
 
-You arrive back from a day out exploring, and you really need to go to the toilet. But your room is on the 13th floor, and the lobby toilets are out of order, so you quickly rush to the elevator. 
+You arrive back from a day out exploring, and you really need to go to the toilet. But your room is on the 13th floor, and the lobby toilets are having all of their plumbing replaced and reorganized to make them theoretically easier to maintain, so you quickly rush to the elevator. 
 
 You hit the elevator button, it lights up right away. But it's still got to descend from the top floor, and there's no indication of where it is, and you need to go, like now, you're close to wetting yourself. Memories from your eight year old self, of the small puddle of urine pooling across the classroom floor, the complete humiliation and embarrassment of your warm, wet, trousers, visible to all thirty of your mean-spirited classmates swirl around in your head. 
 
