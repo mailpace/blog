@@ -46,3 +46,5 @@
 /blog/why-i-use-tailwindcss https://mailpace.com/blog/musings/why-i-use-tailwindcss 301!
 /rss.xml https://mailpace.com/rss.xml 301!
 /sitemap.xml https://mailpace.com/sitemap-index.xml 301!
+/ https://mailpace.com/blog 301!
+/* https://mailpace.com/blog 301!
